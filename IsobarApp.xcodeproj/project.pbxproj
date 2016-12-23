@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EF980EAD24A32157F97A303 /* Pods_IsobarAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */; };
+		3475B365ABAE6DFADE54C148 /* Pods_IsobarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33937B3C735F7BEB989841C6 /* Pods_IsobarApp.framework */; };
+		BAEDD88F4062EEED760FA7CB /* Pods_IsobarAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3E04F35C9F10CDDB377EF /* Pods_IsobarAppTests.framework */; };
 		F29F4B8B1E0D2DFF00A4E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */; };
 		F29F4B8D1E0D2DFF00A4E5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4B8C1E0D2DFF00A4E5BF /* ViewController.swift */; };
 		F29F4B901E0D2DFF00A4E5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4B8E1E0D2DFF00A4E5BF /* Main.storyboard */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33937B3C735F7BEB989841C6 /* Pods_IsobarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F42A4B1BE43FCEC1D4CCC5 /* Pods-IsobarAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarAppUITests/Pods-IsobarAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE3E04F35C9F10CDDB377EF /* Pods_IsobarAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA714AC5F90716C3B7F6708 /* Pods-IsobarAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarAppUITests/Pods-IsobarAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85D48C5FC387FB3C212DA393 /* Pods-IsobarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarApp/Pods-IsobarApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B2AC27BBBC3B0DCC79A1ACCB /* Pods-IsobarAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarAppTests/Pods-IsobarAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCA366BC2334E44C76B6594A /* Pods-IsobarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarApp/Pods-IsobarApp.release.xcconfig"; sourceTree = "<group>"; };
+		ED0AA08697A103963B32B659 /* Pods-IsobarAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarAppTests/Pods-IsobarAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F29F4B871E0D2DFF00A4E5BF /* IsobarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsobarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29F4B8C1E0D2DFF00A4E5BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		F29F4BA61E0D2E0000A4E5BF /* IsobarAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsobarAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4BAA1E0D2E0000A4E5BF /* IsobarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsobarAppUITests.swift; sourceTree = "<group>"; };
 		F29F4BAC1E0D2E0000A4E5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3475B365ABAE6DFADE54C148 /* Pods_IsobarApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEDD88F4062EEED760FA7CB /* Pods_IsobarAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF980EAD24A32157F97A303 /* Pods_IsobarAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4339B6C885046BD22C0583D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85D48C5FC387FB3C212DA393 /* Pods-IsobarApp.debug.xcconfig */,
+				DCA366BC2334E44C76B6594A /* Pods-IsobarApp.release.xcconfig */,
+				ED0AA08697A103963B32B659 /* Pods-IsobarAppTests.debug.xcconfig */,
+				B2AC27BBBC3B0DCC79A1ACCB /* Pods-IsobarAppTests.release.xcconfig */,
+				49F42A4B1BE43FCEC1D4CCC5 /* Pods-IsobarAppUITests.debug.xcconfig */,
+				6AA714AC5F90716C3B7F6708 /* Pods-IsobarAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E9639ED1905B264F1C7EE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33937B3C735F7BEB989841C6 /* Pods_IsobarApp.framework */,
+				5AE3E04F35C9F10CDDB377EF /* Pods_IsobarAppTests.framework */,
+				FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F29F4B7E1E0D2DFF00A4E5BF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				F29F4B9E1E0D2E0000A4E5BF /* IsobarAppTests */,
 				F29F4BA91E0D2E0000A4E5BF /* IsobarAppUITests */,
 				F29F4B881E0D2DFF00A4E5BF /* Products */,
+				4339B6C885046BD22C0583D8 /* Pods */,
+				4E9639ED1905B264F1C7EE74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29F4BAF1E0D2E0000A4E5BF /* Build configuration list for PBXNativeTarget "IsobarApp" */;
 			buildPhases = (
+				AE017F6AAA8D5FF234DDA512 /* [CP] Check Pods Manifest.lock */,
 				F29F4B831E0D2DFF00A4E5BF /* Sources */,
 				F29F4B841E0D2DFF00A4E5BF /* Frameworks */,
 				F29F4B851E0D2DFF00A4E5BF /* Resources */,
+				0866F01192A186064B957CF9 /* [CP] Embed Pods Frameworks */,
+				5F4083078A50CAB1B53FF05E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29F4BB21E0D2E0000A4E5BF /* Build configuration list for PBXNativeTarget "IsobarAppTests" */;
 			buildPhases = (
+				5F15F4AEBA5A127D1AAC0816 /* [CP] Check Pods Manifest.lock */,
 				F29F4B971E0D2E0000A4E5BF /* Sources */,
 				F29F4B981E0D2E0000A4E5BF /* Frameworks */,
 				F29F4B991E0D2E0000A4E5BF /* Resources */,
+				BED4373500B161F3C5C53714 /* [CP] Embed Pods Frameworks */,
+				78E9AE558E3076002C678557 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F29F4BB51E0D2E0000A4E5BF /* Build configuration list for PBXNativeTarget "IsobarAppUITests" */;
 			buildPhases = (
+				FA5E897A9D76B104BDAF4485 /* [CP] Check Pods Manifest.lock */,
 				F29F4BA21E0D2E0000A4E5BF /* Sources */,
 				F29F4BA31E0D2E0000A4E5BF /* Frameworks */,
 				F29F4BA41E0D2E0000A4E5BF /* Resources */,
+				421C3CF299262E37A1358B87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,17 +242,20 @@
 					F29F4B861E0D2DFF00A4E5BF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F29F4B9A1E0D2E0000A4E5BF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F29F4B861E0D2DFF00A4E5BF;
 					};
 					F29F4BA51E0D2E0000A4E5BF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F29F4B861E0D2DFF00A4E5BF;
 					};
@@ -256,6 +307,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0866F01192A186064B957CF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsobarApp/Pods-IsobarApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		421C3CF299262E37A1358B87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsobarAppUITests/Pods-IsobarAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F15F4AEBA5A127D1AAC0816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F4083078A50CAB1B53FF05E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsobarApp/Pods-IsobarApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E9AE558E3076002C678557 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsobarAppTests/Pods-IsobarAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE017F6AAA8D5FF234DDA512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BED4373500B161F3C5C53714 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsobarAppTests/Pods-IsobarAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA5E897A9D76B104BDAF4485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F29F4B831E0D2DFF00A4E5BF /* Sources */ = {
@@ -413,6 +587,7 @@
 		};
 		F29F4BB01E0D2E0000A4E5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D48C5FC387FB3C212DA393 /* Pods-IsobarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SCH5Y74F7;
@@ -426,6 +601,7 @@
 		};
 		F29F4BB11E0D2E0000A4E5BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA366BC2334E44C76B6594A /* Pods-IsobarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SCH5Y74F7;
@@ -439,6 +615,7 @@
 		};
 		F29F4BB31E0D2E0000A4E5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0AA08697A103963B32B659 /* Pods-IsobarAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +631,7 @@
 		};
 		F29F4BB41E0D2E0000A4E5BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2AC27BBBC3B0DCC79A1ACCB /* Pods-IsobarAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +647,7 @@
 		};
 		F29F4BB61E0D2E0000A4E5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F42A4B1BE43FCEC1D4CCC5 /* Pods-IsobarAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7SCH5Y74F7;
@@ -483,6 +662,7 @@
 		};
 		F29F4BB71E0D2E0000A4E5BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AA714AC5F90716C3B7F6708 /* Pods-IsobarAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7SCH5Y74F7;
@@ -514,6 +694,7 @@
 				F29F4BB11E0D2E0000A4E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29F4BB21E0D2E0000A4E5BF /* Build configuration list for PBXNativeTarget "IsobarAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +703,7 @@
 				F29F4BB41E0D2E0000A4E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29F4BB51E0D2E0000A4E5BF /* Build configuration list for PBXNativeTarget "IsobarAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +712,7 @@
 				F29F4BB71E0D2E0000A4E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
