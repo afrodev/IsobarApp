@@ -13,9 +13,9 @@ class Band {
     var id: String!
     var name: String!
     var genre: String!
-    var image: UIImage!
+    var urlImage: URL!
     var country: String!
-    var country_flag: String!
+    var country_flag: URL!
     var website: String!
     
     
@@ -28,8 +28,9 @@ class Band {
     func addExtraInformation(json: JSON) {
         self.genre = json["genre"].string
         self.country = json["country"].string
-        self.country_flag = json["country_flag"].string
+        self.country_flag = json["country_flag"].URL
         self.website = json["website"].string
+        self.urlImage = json["image"].URL
     }
     
     

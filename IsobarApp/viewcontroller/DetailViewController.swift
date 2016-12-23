@@ -7,20 +7,48 @@
 //
 
 import UIKit
+import SVProgressHUD
+import JDStatusBarNotification
 
 class DetailViewController: UIViewController, BandServiceProtocol {
     var band: Band!
     let service = BandService()
+    @IBOutlet weak var imageViewImage: UIImageView!
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelGenre: UILabel!
+    @IBOutlet weak var labelCountry: UILabel!
+    @IBOutlet weak var labelWebsite: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.view.alpha = 0.7
+        SVProgressHUD.show()
         
         service.delegate = self
         service.getExtraInformation(band: band)
     }
     
     func finishGetExtraInformation() {
-        print(band.website)
+        self.labelName.text = band.name
+        self.labelGenre.text = band.genre
+        self.labelCountry.text = band.country
+        self.labelWebsite.text = band.website
+        
+        DispatchQueue.main.async {
+            do {
+                let dataImage = try Data(contentsOf: self.band.urlImage)
+                let image = UIImage(data: dataImage)
+                self.imageViewImage.image = image
+                SVProgressHUD.dismiss(withDelay: 0.2)
+                self.view.alpha = 1
+            } catch {
+                SVProgressHUD.dismiss(withDelay: 0.1)
+                JDStatusBarNotification.show(withStatus: "Image can't be imported")
+                self.view.alpha = 1
+            }
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

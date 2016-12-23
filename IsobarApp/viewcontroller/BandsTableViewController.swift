@@ -14,6 +14,12 @@ class BandsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Bands"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationItem.rightBarButtonItem?.tintColor = .white
+        self.navigationItem.backBarButtonItem?.title = ""
+        
+        
         let service = BandService()
         let array = service.getBandList()
         arrayBands = array

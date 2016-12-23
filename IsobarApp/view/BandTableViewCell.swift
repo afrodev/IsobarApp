@@ -11,7 +11,6 @@ import UIKit
 
 class BandTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var labelID: UILabel!
     @IBOutlet weak var labelName: UILabel!
     
     
@@ -27,7 +26,6 @@ class BandTableViewCell: UITableViewCell {
     }
 
     func configure(band : Band) {
-        self.labelID.text = band.id
         self.labelName.text = band.name
     }
     
