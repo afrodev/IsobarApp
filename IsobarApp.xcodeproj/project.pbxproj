@@ -11,12 +11,17 @@
 		3475B365ABAE6DFADE54C148 /* Pods_IsobarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33937B3C735F7BEB989841C6 /* Pods_IsobarApp.framework */; };
 		BAEDD88F4062EEED760FA7CB /* Pods_IsobarAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3E04F35C9F10CDDB377EF /* Pods_IsobarAppTests.framework */; };
 		F29F4B8B1E0D2DFF00A4E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */; };
-		F29F4B8D1E0D2DFF00A4E5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4B8C1E0D2DFF00A4E5BF /* ViewController.swift */; };
 		F29F4B901E0D2DFF00A4E5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4B8E1E0D2DFF00A4E5BF /* Main.storyboard */; };
 		F29F4B921E0D2DFF00A4E5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F4B911E0D2DFF00A4E5BF /* Assets.xcassets */; };
 		F29F4B951E0D2DFF00A4E5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4B931E0D2DFF00A4E5BF /* LaunchScreen.storyboard */; };
 		F29F4BA01E0D2E0000A4E5BF /* IsobarAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4B9F1E0D2E0000A4E5BF /* IsobarAppTests.swift */; };
 		F29F4BAB1E0D2E0000A4E5BF /* IsobarAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BAA1E0D2E0000A4E5BF /* IsobarAppUITests.swift */; };
+		F29F4BC01E0D346C00A4E5BF /* bands.json in Resources */ = {isa = PBXBuildFile; fileRef = F29F4BBF1E0D346C00A4E5BF /* bands.json */; };
+		F29F4BC21E0D34DF00A4E5BF /* BandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC11E0D34DF00A4E5BF /* BandsTableViewController.swift */; };
+		F29F4BC61E0D35B700A4E5BF /* BandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC51E0D35B700A4E5BF /* BandTableViewCell.swift */; };
+		F29F4BC81E0D35CA00A4E5BF /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC71E0D35CA00A4E5BF /* Band.swift */; };
+		F29F4BCA1E0D360C00A4E5BF /* BandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC91E0D360C00A4E5BF /* BandService.swift */; };
+		F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +52,6 @@
 		ED0AA08697A103963B32B659 /* Pods-IsobarAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsobarAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IsobarAppTests/Pods-IsobarAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F29F4B871E0D2DFF00A4E5BF /* IsobarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsobarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F29F4B8C1E0D2DFF00A4E5BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F29F4B8F1E0D2DFF00A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F29F4B911E0D2DFF00A4E5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29F4B941E0D2DFF00A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,12 @@
 		F29F4BA61E0D2E0000A4E5BF /* IsobarAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsobarAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F4BAA1E0D2E0000A4E5BF /* IsobarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsobarAppUITests.swift; sourceTree = "<group>"; };
 		F29F4BAC1E0D2E0000A4E5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29F4BBF1E0D346C00A4E5BF /* bands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bands.json; path = network/bands.json; sourceTree = "<group>"; };
+		F29F4BC11E0D34DF00A4E5BF /* BandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandsTableViewController.swift; path = viewcontroller/BandsTableViewController.swift; sourceTree = "<group>"; };
+		F29F4BC51E0D35B700A4E5BF /* BandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandTableViewCell.swift; path = view/BandTableViewCell.swift; sourceTree = "<group>"; };
+		F29F4BC71E0D35CA00A4E5BF /* Band.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Band.swift; path = model/Band.swift; sourceTree = "<group>"; };
+		F29F4BC91E0D360C00A4E5BF /* BandService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandService.swift; sourceTree = "<group>"; };
+		F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = viewcontroller/DetailViewController.swift; sourceTree = "<group>"; };
 		FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,8 +147,11 @@
 		F29F4B891E0D2DFF00A4E5BF /* IsobarApp */ = {
 			isa = PBXGroup;
 			children = (
+				F29F4BBB1E0D31F900A4E5BF /* model */,
+				F29F4BBA1E0D31F200A4E5BF /* viewcontroller */,
+				F29F4BB91E0D31E800A4E5BF /* view */,
+				F29F4BB81E0D31E000A4E5BF /* network */,
 				F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */,
-				F29F4B8C1E0D2DFF00A4E5BF /* ViewController.swift */,
 				F29F4B8E1E0D2DFF00A4E5BF /* Main.storyboard */,
 				F29F4B911E0D2DFF00A4E5BF /* Assets.xcassets */,
 				F29F4B931E0D2DFF00A4E5BF /* LaunchScreen.storyboard */,
@@ -163,6 +176,40 @@
 				F29F4BAC1E0D2E0000A4E5BF /* Info.plist */,
 			);
 			path = IsobarAppUITests;
+			sourceTree = "<group>";
+		};
+		F29F4BB81E0D31E000A4E5BF /* network */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4BC91E0D360C00A4E5BF /* BandService.swift */,
+				F29F4BBF1E0D346C00A4E5BF /* bands.json */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		F29F4BB91E0D31E800A4E5BF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4BC51E0D35B700A4E5BF /* BandTableViewCell.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F29F4BBA1E0D31F200A4E5BF /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4BC11E0D34DF00A4E5BF /* BandsTableViewController.swift */,
+				F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+		F29F4BBB1E0D31F900A4E5BF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4BC71E0D35CA00A4E5BF /* Band.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +335,7 @@
 			files = (
 				F29F4B951E0D2DFF00A4E5BF /* LaunchScreen.storyboard in Resources */,
 				F29F4B921E0D2DFF00A4E5BF /* Assets.xcassets in Resources */,
+				F29F4BC01E0D346C00A4E5BF /* bands.json in Resources */,
 				F29F4B901E0D2DFF00A4E5BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +484,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29F4B8D1E0D2DFF00A4E5BF /* ViewController.swift in Sources */,
+				F29F4BCA1E0D360C00A4E5BF /* BandService.swift in Sources */,
+				F29F4BC81E0D35CA00A4E5BF /* Band.swift in Sources */,
+				F29F4BC21E0D34DF00A4E5BF /* BandsTableViewController.swift in Sources */,
+				F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */,
+				F29F4BC61E0D35B700A4E5BF /* BandTableViewCell.swift in Sources */,
 				F29F4B8B1E0D2DFF00A4E5BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

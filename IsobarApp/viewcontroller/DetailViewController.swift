@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  IsobarApp
 //
 //  Created by Humberto Vieira on 23/12/16.
@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class DetailViewController: UIViewController, BandServiceProtocol {
+    var band: Band!
+    let service = BandService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        service.delegate = self
+        service.getExtraInformation(band: band)
     }
-
+    
+    func finishGetExtraInformation() {
+        print(band.website)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
+   
 }
-
