@@ -8,8 +8,10 @@
 
 import Foundation
 import SwiftyJSON
+import ObjectMapper
 
-class Band {
+
+class Band: Mappable {
     var id: String!
     var name: String!
     var genre: String!
@@ -19,7 +21,20 @@ class Band {
     var website: String!
     
     
+    required init?(map: Map) {
+        print(map)
+        self.id <- map["id"]
+        self.name <- map["name"]
+    }
     
+    func mapping(map: Map) {
+        self.genre <- map["genre"]
+        self.country <- map["country"]
+        self.country_flag <- map["country_flag"]
+        self.website <- map["website"]
+        self.urlImage <- map["image"]
+    }
+    /*
     init(json: JSON) {
         self.id = json["id"].string
         self.name = json["name"].string
@@ -32,6 +47,6 @@ class Band {
         self.website = json["website"].string
         self.urlImage = json["image"].URL
     }
-    
+    */
     
 }

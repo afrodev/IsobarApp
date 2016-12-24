@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyJSON
 import Alamofire
+import ObjectMapper
 
 
 protocol BandServiceProtocol: class {
@@ -24,24 +25,21 @@ class BandService {
             return []
         }
         
-        var arrayList: [Band] = []
-        
-        
         guard let jsonData = NSData(contentsOf: URL(fileURLWithPath: path)) else {
             return []
         }
         
         let json = JSON(data: jsonData as Data)
-        
-        let bands = json["bands"]
-        
-        for b in bands {
-            
-            let band = Band(json: b.1)
-            arrayList.append(band)
+        guard let bandsStr = json["bands"].rawString() else {
+            return []
         }
         
-        return arrayList
+        guard let list: [Band] = Mapper<Band>().mapArray(JSONString: bandsStr) else {
+            return []
+        }
+        
+        
+        return list
     }
 
     func getExtraInformation(band: Band!) {
@@ -54,7 +52,7 @@ class BandService {
             
             let json = JSON(data: data)
             
-            band.addExtraInformation(json: json)
+            //band.addExtraInformation(json: json)
             
             self.delegate?.finishGetExtraInformation()
         }

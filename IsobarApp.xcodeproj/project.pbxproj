@@ -291,7 +291,7 @@
 				TargetAttributes = {
 					F29F4B861E0D2DFF00A4E5BF = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 7SCH5Y74F7;
+						DevelopmentTeam = LCZDDBK62C;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -646,7 +646,7 @@
 			baseConfigurationReference = 85D48C5FC387FB3C212DA393 /* Pods-IsobarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = IsobarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.IsobarApp;
@@ -660,7 +660,7 @@
 			baseConfigurationReference = DCA366BC2334E44C76B6594A /* Pods-IsobarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = IsobarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.IsobarApp;

@@ -10,6 +10,7 @@ target 'IsobarApp' do
   pod 'Alamofire'
   pod 'SVProgressHUD'
   pod 'JDStatusBarNotification'
+  pod 'AlamofireObjectMapper'
 
   target 'IsobarAppTests' do
     inherit! :search_paths

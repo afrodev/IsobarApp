@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JDStatusBarNotification.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,16 +52,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13DAD529698D654329D8FAE9E2C7762F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>26C36EA09319E7EBD14D3AE2E63FC9B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>35FAFEC4CC2C2EBECEE1C9DCC300D424</key>
 		<dict>
 			<key>primary</key>
@@ -62,7 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3EB58964E899DDA038D7E191CA336563</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A22FA300D52778E5F8F2275057DD45A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAA432B1C57C6F6FE0C50FAEC79B46C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E713196C4B8FE763C30CE88573CA512D</key>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>
