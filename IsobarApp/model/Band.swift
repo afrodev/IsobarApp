@@ -22,9 +22,6 @@ class Band: Mappable {
     
     
     required init?(map: Map) {
-        print(map)
-        self.id <- map["id"]
-        self.name <- map["name"]
     }
     
     func mapping(map: Map) {
