@@ -13,7 +13,7 @@ import ObjectMapper
 
 
 protocol BandServiceProtocol: class {
-    func finishGetExtraInformation()
+    func finishGetExtraInformation(band: Band)
 }
 
 class BandService {
@@ -42,7 +42,7 @@ class BandService {
         return list
     }
 
-    func getExtraInformation(band: Band!) {
+    func getExtraInformation(band: Band) {
         let newURL = strURL + band.id
         
         Alamofire.request(newURL).responseJSON { (response) in
@@ -50,11 +50,17 @@ class BandService {
                 return
             }
             
-            let json = JSON(data: data)
+            guard let jsonString = JSON(data: data).rawString() else {
+                return
+            }
             
-            //band.addExtraInformation(json: json)
             
-            self.delegate?.finishGetExtraInformation()
+            guard let newBand = Mapper<Band>().map(JSONString: jsonString) else {
+                return
+            }
+            
+            
+            self.delegate?.finishGetExtraInformation(band: newBand)
         }
         
     }

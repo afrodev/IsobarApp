@@ -11,17 +11,18 @@ import SVProgressHUD
 import JDStatusBarNotification
 
 class DetailViewController: UIViewController, BandServiceProtocol {
-    var band: Band!
-    let service = BandService()
     @IBOutlet weak var imageViewImage: UIImageView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelGenre: UILabel!
     @IBOutlet weak var labelCountry: UILabel!
     @IBOutlet weak var labelWebsite: UILabel!
     
+    var band: Band!
+    let service = BandService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.alpha = 0.7
         SVProgressHUD.show()
         
@@ -29,7 +30,9 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         service.getExtraInformation(band: band)
     }
     
-    func finishGetExtraInformation() {
+    
+    func finishGetExtraInformation(band: Band) {
+        self.band = band
         self.labelName.text = band.name
         self.labelGenre.text = band.genre
         self.labelCountry.text = band.country
@@ -37,19 +40,23 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         
         DispatchQueue.main.async {
             do {
-                let dataImage = try Data(contentsOf: self.band.urlImage)
-                let image = UIImage(data: dataImage)
-                self.imageViewImage.image = image
-                SVProgressHUD.dismiss(withDelay: 0.2)
-                self.view.alpha = 1
+                if let url = URL(string: band.urlImage) {
+                
+                    let dataImage = try Data(contentsOf: url)
+                    let image = UIImage(data: dataImage)
+                    self.imageViewImage.image = image
+                
+                    SVProgressHUD.dismiss(withDelay: 0.2)
+                    self.view.alpha = 1
+                }
             } catch {
                 SVProgressHUD.dismiss(withDelay: 0.1)
                 JDStatusBarNotification.show(withStatus: "Image can't be imported")
                 self.view.alpha = 1
             }
         }
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
