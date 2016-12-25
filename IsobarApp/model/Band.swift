@@ -9,20 +9,23 @@
 import Foundation
 import SwiftyJSON
 import ObjectMapper
+import RealmSwift
 
 
-class Band: Mappable {
-    var id: String!
-    var name: String!
-    var genre: String!
-    var urlImage: String!
-    var country: String!
-    var country_flag: String!
-    var website: String!
-    
-    
-    required init?(map: Map) {
+class Band: Object, Mappable {
+    /// This function can be used to validate JSON prior to mapping. Return nil to cancel mapping at this point
+    required convenience init?(map: Map) {
+        self.init()
     }
+
+    dynamic var id: String!
+    dynamic var name: String!
+    dynamic var genre: String!
+    dynamic var urlImage: String!
+    dynamic var country: String!
+    dynamic var country_flag: String!
+    dynamic var website: String!
+
     
     func mapping(map: Map) {
         self.id <- map["id"]
@@ -32,6 +35,31 @@ class Band: Mappable {
         self.country_flag <- map["country_flag"]
         self.website <- map["website"]
         self.urlImage <- map["image"]
+
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(self, update: true)
+        }
+
+       // requestRealm()
     }
+    
+    override static func primaryKey() -> String? {
+        return "name"
+    }
+    
+    func requestRealm() {
+        let realm = try! Realm()
+
+        let plist = realm.objects(Band.self)
+        for p in plist {
+            print(p.name)
+        }
+        print(plist.count)
+        
+    }
+    
+    
+    
     
 }

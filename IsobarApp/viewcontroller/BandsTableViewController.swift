@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BandsTableViewController: UITableViewController {
     var arrayBands: [Band] = []
@@ -18,7 +19,6 @@ class BandsTableViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.rightBarButtonItem?.tintColor = .white
         self.navigationItem.backBarButtonItem?.title = ""
-        
         
         let service = BandService()
         let array = service.getBandList()

@@ -11,6 +11,7 @@ target 'IsobarApp' do
   pod 'SVProgressHUD'
   pod 'JDStatusBarNotification'
   pod 'AlamofireObjectMapper'
+  pod 'RealmSwift'
 
   target 'IsobarAppTests' do
     inherit! :search_paths

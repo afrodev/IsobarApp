@@ -38,12 +38,11 @@ class BandService {
             return []
         }
         
-        
         return list
     }
 
     func getExtraInformation(band: Band) {
-        let newURL = strURL + band.id
+        let newURL = strURL + band.id!
         
         Alamofire.request(newURL).responseJSON { (response) in
             guard let data = response.data else {
@@ -54,11 +53,9 @@ class BandService {
                 return
             }
             
-            
             guard let newBand = Mapper<Band>().map(JSONString: jsonString) else {
                 return
             }
-            
             
             self.delegate?.finishGetExtraInformation(band: newBand)
         }
