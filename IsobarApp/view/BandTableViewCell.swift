@@ -23,7 +23,7 @@ class BandTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
-    // Método que configura a célula através de um objeto band
+    //MARK:  Método que configura a célula através de um objeto band
     func configure(band : Band) {
         self.labelName.text = band.name
     }

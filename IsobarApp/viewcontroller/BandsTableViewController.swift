@@ -16,7 +16,7 @@ class BandsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Altera os valores da navigationBar
+        // MARK: Altera os valores da navigationBar
         self.title = "Bands"
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.rightBarButtonItem?.tintColor = .white
@@ -26,7 +26,6 @@ class BandsTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         SVProgressHUD.dismiss()
         
-        // Atualiza o serviço pois senão não salva os IDs de cada banda
         let service = BandService()
         let array = service.getBandList()
         arrayBands = array
@@ -45,7 +44,6 @@ class BandsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBand", for: indexPath) as! BandTableViewCell
         
-        // Coloca os dados da celula através de um objeto Band
         let band = self.arrayBands[indexPath.row]
         cell.configure(band: band)
 
@@ -53,7 +51,7 @@ class BandsTableViewController: UITableViewController {
     }
   
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Evento de quando a celula é selecionada, ela vai para outra tela mandando o objeto
+        // MARK: Evento de quando a celula é selecionada, ela vai para outra tela mandando o objeto
         let band = arrayBands[indexPath.row]
         self.performSegue(withIdentifier: "segueDetailViewController", sender: band)
     }

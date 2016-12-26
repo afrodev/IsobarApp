@@ -23,7 +23,7 @@ class DetailViewController: UIViewController, BandServiceProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Coloca a loading na tela e deixa-a mais escura
+        // MARK: Coloca a loading na tela e deixa-a mais escura
         self.view.alpha = 0.5
         SVProgressHUD.show()
         
@@ -31,7 +31,7 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         service.getExtraInformation(band: band)
     }
     
-    // Protocolo obrigatório do BandServiceProtocol
+    // MARK: Protocolo obrigatório do BandServiceProtocol
     func finishGetExtraInformation(band: Band) {
         self.band = band
         
@@ -41,14 +41,14 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         self.labelWebsite.text = band.website
         
         DispatchQueue.main.async {
-            // Se existir uma imagem ele coloca na tela, senão deixa a default
+            // MARK: Se existir uma imagem ele coloca na tela, senão deixa a default
             if let data = band.imageData {
                 self.imageViewImage.image = UIImage(data: data)
             } else {
                 self.imageViewImage.image = UIImage(named: "testeImage")
             }
             
-            // Tira o loading e coloca a tela com o alpha normals
+            // MARK: Tira o loading e coloca a tela com o alpha normals
             SVProgressHUD.dismiss()
             self.view.alpha = 1
         }

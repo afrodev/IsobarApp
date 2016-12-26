@@ -11,9 +11,8 @@ import SwiftyJSON
 import ObjectMapper
 import RealmSwift
 
-// Modelo da Banda
 class Band: Object, Mappable {
-    // Variaveis
+    // MARK: Variaveis
     dynamic var id: String!
     dynamic var name: String!
     dynamic var genre: String!
@@ -23,12 +22,12 @@ class Band: Object, Mappable {
     dynamic var website: String!
     dynamic var imageData: Data!
     
-    // Método que obrigatório do Realm
+    // MARK:  Método que obrigatório do Realm
     required convenience init?(map: Map) {
         self.init()
     }
     
-    // Função obrigatória que mapeia o json para um objeto de classe
+    // MARK: Função obrigatória que mapeia o json para um objeto de classe
     func mapping(map: Map) {
         self.id <- map["id"]
         self.name <- map["name"]
@@ -39,18 +38,16 @@ class Band: Object, Mappable {
         self.urlImage <- map["image"]
     }
     
-    // Define a chave primária
-    // Nome é a chave primária pois o id acaba sendo um valor alterável
     override static func primaryKey() -> String? {
         return "name"
     }
     
-    // Salva o objeto mapeado no Realm
+    // MARK: Salva o objeto mapeado no Realm
     func save() {
         let realm = try! Realm()
         
         do {
-            // Transforma Data em UIImage
+            // MARK: Transforma Data em UIImage
             if let url = URL(string: self.urlImage) {
                 print(url)
                 let imageData = try Data(contentsOf: url)
@@ -61,7 +58,6 @@ class Band: Object, Mappable {
             print("erro imagem model")
         }
         
-        // Efetivamente salva
         try! realm.write {
             realm.add(self, update: true)
         }
