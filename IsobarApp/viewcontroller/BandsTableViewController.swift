@@ -11,7 +11,7 @@ import RealmSwift
 import SVProgressHUD
 
 class BandsTableViewController: UITableViewController {
-    var arrayBands: [Band] = []
+    var arrayBands: [Band]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,12 +44,15 @@ class BandsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBand", for: indexPath) as! BandTableViewCell
         
-        let band = self.arrayBands[indexPath.row]
-        cell.configure(band: band)
-
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let band = self.arrayBands[indexPath.row]
+        (cell as! BandTableViewCell).configure(band: band)
+    }
   
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // MARK: Evento de quando a celula é selecionada, ela vai para outra tela mandando o objeto
         let band = arrayBands[indexPath.row]
