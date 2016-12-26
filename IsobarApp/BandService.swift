@@ -45,7 +45,7 @@ class BandService {
     
     // Pega as informações das bandas individualmente através dos IDs e salva no Realm
     func getExtraInformation(band: Band) {
-        let newURL = strURL + band.id!
+        let newURL = strURL + band.id
         
         // Faz o request no banco de dados
         Alamofire.request(newURL).responseJSON { (response) in

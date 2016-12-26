@@ -22,6 +22,7 @@
 		F29F4BC81E0D35CA00A4E5BF /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC71E0D35CA00A4E5BF /* Band.swift */; };
 		F29F4BCA1E0D360C00A4E5BF /* BandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC91E0D360C00A4E5BF /* BandService.swift */; };
 		F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */; };
+		F29F4BD61E1162D500A4E5BF /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F29F4BC71E0D35CA00A4E5BF /* Band.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Band.swift; path = model/Band.swift; sourceTree = "<group>"; };
 		F29F4BC91E0D360C00A4E5BF /* BandService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandService.swift; sourceTree = "<group>"; };
 		F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = viewcontroller/DetailViewController.swift; sourceTree = "<group>"; };
+		F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F29F4B9F1E0D2E0000A4E5BF /* IsobarAppTests.swift */,
+				F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */,
 				F29F4BA11E0D2E0000A4E5BF /* Info.plist */,
 			);
 			path = IsobarAppTests;
@@ -497,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29F4BD61E1162D500A4E5BF /* NetworkTests.swift in Sources */,
 				F29F4BA01E0D2E0000A4E5BF /* IsobarAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
