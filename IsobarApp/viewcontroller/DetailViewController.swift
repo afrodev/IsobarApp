@@ -24,7 +24,7 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         super.viewDidLoad()
         
         self.view.alpha = 0.7
-        //SVProgressHUD.show()
+        SVProgressHUD.show()
         
         service.delegate = self
         service.getExtraInformation(band: band)
