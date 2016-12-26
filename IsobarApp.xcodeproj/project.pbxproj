@@ -24,6 +24,7 @@
 		F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */; };
 		F29F4BD61E1162D500A4E5BF /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */; };
 		F29F4BDB1E118B3200A4E5BF /* DetailBandStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4BD91E118B3200A4E5BF /* DetailBandStoryboard.storyboard */; };
+		F29F4BE01E11AF2700A4E5BF /* DetailViewController+BandServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BDF1E11AF2700A4E5BF /* DetailViewController+BandServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = viewcontroller/DetailViewController.swift; sourceTree = "<group>"; };
 		F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		F29F4BDA1E118B3200A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DetailBandStoryboard.storyboard; sourceTree = "<group>"; };
+		F29F4BDF1E11AF2700A4E5BF /* DetailViewController+BandServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DetailViewController+BandServiceProtocol.swift"; path = "viewcontroller/DetailViewController+BandServiceProtocol.swift"; sourceTree = "<group>"; };
 		FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 			children = (
 				F29F4BC11E0D34DF00A4E5BF /* BandsTableViewController.swift */,
 				F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */,
+				F29F4BDF1E11AF2700A4E5BF /* DetailViewController+BandServiceProtocol.swift */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				F29F4BCA1E0D360C00A4E5BF /* BandService.swift in Sources */,
 				F29F4BC81E0D35CA00A4E5BF /* Band.swift in Sources */,
 				F29F4BC21E0D34DF00A4E5BF /* BandsTableViewController.swift in Sources */,
+				F29F4BE01E11AF2700A4E5BF /* DetailViewController+BandServiceProtocol.swift in Sources */,
 				F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */,
 				F29F4BC61E0D35B700A4E5BF /* BandTableViewCell.swift in Sources */,
 				F29F4B8B1E0D2DFF00A4E5BF /* AppDelegate.swift in Sources */,
