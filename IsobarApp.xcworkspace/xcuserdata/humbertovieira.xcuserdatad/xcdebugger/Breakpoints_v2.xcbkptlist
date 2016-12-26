@@ -101,38 +101,6 @@
             endingLineNumber = "54"
             landmarkName = "finishGetExtraInformation(band:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IsobarAppTests.NetworkTests.finishGetExtraInformation (band : IsobarApp.Band) -&gt; ()"
-                  moduleName = "IsobarAppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertovieira/Documents/Repositories/IsobarApp/IsobarAppTests/NetworkTests.swift"
-                  timestampString = "504459745.576388"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "78">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IsobarAppTests.NetworkTests.(finishGetExtraInformation (band : IsobarApp.Band) -&gt; ()).(implicit closure #1)"
-                  moduleName = "IsobarAppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertovieira/Documents/Repositories/IsobarApp/IsobarAppTests/NetworkTests.swift"
-                  timestampString = "504459745.57942"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

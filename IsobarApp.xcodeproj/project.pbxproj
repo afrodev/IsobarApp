@@ -23,6 +23,7 @@
 		F29F4BCA1E0D360C00A4E5BF /* BandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC91E0D360C00A4E5BF /* BandService.swift */; };
 		F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */; };
 		F29F4BD61E1162D500A4E5BF /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */; };
+		F29F4BDB1E118B3200A4E5BF /* DetailBandStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F4BD91E118B3200A4E5BF /* DetailBandStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F29F4BC91E0D360C00A4E5BF /* BandService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandService.swift; sourceTree = "<group>"; };
 		F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = viewcontroller/DetailViewController.swift; sourceTree = "<group>"; };
 		F29F4BD51E1162D500A4E5BF /* NetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		F29F4BDA1E118B3200A4E5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DetailBandStoryboard.storyboard; sourceTree = "<group>"; };
 		FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,10 +155,9 @@
 				F29F4BBA1E0D31F200A4E5BF /* viewcontroller */,
 				F29F4BB91E0D31E800A4E5BF /* view */,
 				F29F4BB81E0D31E000A4E5BF /* network */,
+				F29F4BDC1E118C6E00A4E5BF /* storyboard */,
 				F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */,
-				F29F4B8E1E0D2DFF00A4E5BF /* Main.storyboard */,
 				F29F4B911E0D2DFF00A4E5BF /* Assets.xcassets */,
-				F29F4B931E0D2DFF00A4E5BF /* LaunchScreen.storyboard */,
 				F29F4B961E0D2DFF00A4E5BF /* Info.plist */,
 			);
 			path = IsobarApp;
@@ -213,6 +214,16 @@
 				F29F4BC71E0D35CA00A4E5BF /* Band.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		F29F4BDC1E118C6E00A4E5BF /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F29F4B8E1E0D2DFF00A4E5BF /* Main.storyboard */,
+				F29F4BD91E118B3200A4E5BF /* DetailBandStoryboard.storyboard */,
+				F29F4B931E0D2DFF00A4E5BF /* LaunchScreen.storyboard */,
+			);
+			name = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29F4B951E0D2DFF00A4E5BF /* LaunchScreen.storyboard in Resources */,
+				F29F4BDB1E118B3200A4E5BF /* DetailBandStoryboard.storyboard in Resources */,
 				F29F4B921E0D2DFF00A4E5BF /* Assets.xcassets in Resources */,
 				F29F4BC01E0D346C00A4E5BF /* bands.json in Resources */,
 				F29F4B901E0D2DFF00A4E5BF /* Main.storyboard in Resources */,
@@ -543,6 +555,14 @@
 				F29F4B941E0D2DFF00A4E5BF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F29F4BD91E118B3200A4E5BF /* DetailBandStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29F4BDA1E118B3200A4E5BF /* Base */,
+			);
+			name = DetailBandStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
