@@ -51,10 +51,12 @@ class Band: Object, Mappable {
         
         do {
             if let url = URL(string: self.urlImage) {
+                print(url)
                 let imageData = try Data(contentsOf: url)
                 self.imageData = imageData
             }
         } catch {
+            self.imageData = nil
             print("erro imagem model")
         }
         

@@ -41,10 +41,13 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         DispatchQueue.main.async {
             if let data = band.imageData {
                 self.imageViewImage.image = UIImage(data: data)
-                
-                SVProgressHUD.dismiss()
-                self.view.alpha = 1
+            } else {
+                self.imageViewImage.image = UIImage(named: "testeImage")
             }
+            
+            SVProgressHUD.dismiss()
+            self.view.alpha = 1
+            
             
         }
     }

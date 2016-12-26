@@ -22,7 +22,6 @@
 		F29F4BC81E0D35CA00A4E5BF /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC71E0D35CA00A4E5BF /* Band.swift */; };
 		F29F4BCA1E0D360C00A4E5BF /* BandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BC91E0D360C00A4E5BF /* BandService.swift */; };
 		F29F4BCC1E0D3F9E00A4E5BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */; };
-		F29F4BCE1E0D553D00A4E5BF /* testeImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F29F4BCD1E0D553D00A4E5BF /* testeImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +68,6 @@
 		F29F4BC71E0D35CA00A4E5BF /* Band.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Band.swift; path = model/Band.swift; sourceTree = "<group>"; };
 		F29F4BC91E0D360C00A4E5BF /* BandService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandService.swift; sourceTree = "<group>"; };
 		F29F4BCB1E0D3F9E00A4E5BF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = viewcontroller/DetailViewController.swift; sourceTree = "<group>"; };
-		F29F4BCD1E0D553D00A4E5BF /* testeImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testeImage.jpg; sourceTree = "<group>"; };
 		FF74262EF51D6741A2746D1E /* Pods_IsobarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsobarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,7 +153,6 @@
 				F29F4BB81E0D31E000A4E5BF /* network */,
 				F29F4B8A1E0D2DFF00A4E5BF /* AppDelegate.swift */,
 				F29F4B8E1E0D2DFF00A4E5BF /* Main.storyboard */,
-				F29F4BCD1E0D553D00A4E5BF /* testeImage.jpg */,
 				F29F4B911E0D2DFF00A4E5BF /* Assets.xcassets */,
 				F29F4B931E0D2DFF00A4E5BF /* LaunchScreen.storyboard */,
 				F29F4B961E0D2DFF00A4E5BF /* Info.plist */,
@@ -339,7 +336,6 @@
 				F29F4B951E0D2DFF00A4E5BF /* LaunchScreen.storyboard in Resources */,
 				F29F4B921E0D2DFF00A4E5BF /* Assets.xcassets in Resources */,
 				F29F4BC01E0D346C00A4E5BF /* bands.json in Resources */,
-				F29F4BCE1E0D553D00A4E5BF /* testeImage.jpg in Resources */,
 				F29F4B901E0D2DFF00A4E5BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
