@@ -10,6 +10,7 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 import ObjectMapper
+import RealmSwift
 
 
 protocol BandServiceProtocol: class {
@@ -56,9 +57,30 @@ class BandService {
             guard let newBand = Mapper<Band>().map(JSONString: jsonString) else {
                 return
             }
-            
+        
+            newBand.id = band.id
+            newBand.save()
             self.delegate?.finishGetExtraInformation(band: newBand)
         }
+        
+        DispatchQueue.main.async {
+            if let newBand = self.searchRealmObjectBy(name: band.name) {
+                print(newBand.genre)
+                self.delegate?.finishGetExtraInformation(band: newBand)
+            }
+        }
+        
+        
+        
+        
+    }
+    
+    func searchRealmObjectBy(name: String) -> Band? {
+        let realm = try! Realm()
+        
+        let band = realm.objects(Band.self).filter("name = %@ AND genre != nil", name).first
+        
+        return band
         
     }
     

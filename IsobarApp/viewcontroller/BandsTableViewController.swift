@@ -20,13 +20,18 @@ class BandsTableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem?.tintColor = .white
         self.navigationItem.backBarButtonItem?.title = ""
         
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        
         let service = BandService()
         let array = service.getBandList()
         arrayBands = array
-        
         tableView.reloadData()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

@@ -24,7 +24,7 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         super.viewDidLoad()
         
         self.view.alpha = 0.7
-        SVProgressHUD.show()
+        //SVProgressHUD.show()
         
         service.delegate = self
         service.getExtraInformation(band: band)
@@ -46,12 +46,13 @@ class DetailViewController: UIViewController, BandServiceProtocol {
                     let image = UIImage(data: dataImage)
                     self.imageViewImage.image = image
                 
-                    SVProgressHUD.dismiss(withDelay: 0.2)
+                    SVProgressHUD.dismiss()
                     self.view.alpha = 1
                 }
             } catch {
-                SVProgressHUD.dismiss(withDelay: 0.1)
+                SVProgressHUD.dismiss()
                 JDStatusBarNotification.show(withStatus: "Image can't be imported")
+                JDStatusBarNotification.dismiss(after: 3)
                 self.view.alpha = 1
             }
         }

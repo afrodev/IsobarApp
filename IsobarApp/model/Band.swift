@@ -36,16 +36,18 @@ class Band: Object, Mappable {
         self.website <- map["website"]
         self.urlImage <- map["image"]
 
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(self, update: true)
-        }
-
        // requestRealm()
     }
     
     override static func primaryKey() -> String? {
         return "name"
+    }
+    
+    func save() {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(self, update: true)
+        }
     }
     
     func requestRealm() {
