@@ -13,7 +13,7 @@ import RealmSwift
 
 
 class Band: Object, Mappable {
-    /// This function can be used to validate JSON prior to mapping. Return nil to cancel mapping at this point
+
     required convenience init?(map: Map) {
         self.init()
     }
@@ -25,6 +25,8 @@ class Band: Object, Mappable {
     dynamic var country: String!
     dynamic var country_flag: String!
     dynamic var website: String!
+    dynamic var imageData: Data!
+
 
     
     func mapping(map: Map) {
@@ -35,8 +37,9 @@ class Band: Object, Mappable {
         self.country_flag <- map["country_flag"]
         self.website <- map["website"]
         self.urlImage <- map["image"]
+        
 
-       // requestRealm()
+
     }
     
     override static func primaryKey() -> String? {
@@ -45,6 +48,16 @@ class Band: Object, Mappable {
     
     func save() {
         let realm = try! Realm()
+        
+        do {
+            if let url = URL(string: self.urlImage) {
+                let imageData = try Data(contentsOf: url)
+                self.imageData = imageData
+            }
+        } catch {
+            print("erro imagem model")
+        }
+        
         try! realm.write {
             realm.add(self, update: true)
         }
@@ -57,8 +70,8 @@ class Band: Object, Mappable {
         for p in plist {
             print(p.name)
         }
-        print(plist.count)
         
+        print(plist.count)
     }
     
     

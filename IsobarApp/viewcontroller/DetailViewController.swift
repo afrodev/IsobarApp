@@ -39,22 +39,13 @@ class DetailViewController: UIViewController, BandServiceProtocol {
         self.labelWebsite.text = band.website
         
         DispatchQueue.main.async {
-            do {
-                if let url = URL(string: band.urlImage) {
+            if let data = band.imageData {
+                self.imageViewImage.image = UIImage(data: data)
                 
-                    let dataImage = try Data(contentsOf: url)
-                    let image = UIImage(data: dataImage)
-                    self.imageViewImage.image = image
-                
-                    SVProgressHUD.dismiss()
-                    self.view.alpha = 1
-                }
-            } catch {
                 SVProgressHUD.dismiss()
-                JDStatusBarNotification.show(withStatus: "Image can't be imported")
-                JDStatusBarNotification.dismiss(after: 3)
                 self.view.alpha = 1
             }
+            
         }
     }
     

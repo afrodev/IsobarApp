@@ -65,23 +65,15 @@ class BandService {
         
         DispatchQueue.main.async {
             if let newBand = self.searchRealmObjectBy(name: band.name) {
-                print(newBand.genre)
                 self.delegate?.finishGetExtraInformation(band: newBand)
             }
         }
-        
-        
-        
-        
     }
     
     func searchRealmObjectBy(name: String) -> Band? {
         let realm = try! Realm()
-        
         let band = realm.objects(Band.self).filter("name = %@ AND genre != nil", name).first
-        
         return band
-        
     }
     
 }
