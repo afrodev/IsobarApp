@@ -87,53 +87,5 @@
             endingLineNumber = "110">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IsobarApp/model/Band.swift"
-            timestampString = "504449336.695086"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "save()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IsobarApp.Band.save () -&gt; ()"
-                  moduleName = "IsobarApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertovieira/Documents/Repositories/IsobarApp/IsobarApp/model/Band.swift"
-                  timestampString = "504449860.622741"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IsobarApp.Band.save () -&gt; ()"
-                  moduleName = "IsobarApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/humbertovieira/Documents/Repositories/IsobarApp/IsobarApp/model/Band.swift"
-                  timestampString = "504449860.624197"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "324">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

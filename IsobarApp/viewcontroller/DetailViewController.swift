@@ -23,40 +23,34 @@ class DetailViewController: UIViewController, BandServiceProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.alpha = 0.7
+        // Coloca a loading na tela e deixa-a mais escura
+        self.view.alpha = 0.5
         SVProgressHUD.show()
         
         service.delegate = self
         service.getExtraInformation(band: band)
     }
     
-    
+    // Protocolo obrigatório do BandServiceProtocol
     func finishGetExtraInformation(band: Band) {
         self.band = band
+        
         self.labelName.text = band.name
         self.labelGenre.text = band.genre
         self.labelCountry.text = band.country
         self.labelWebsite.text = band.website
         
         DispatchQueue.main.async {
+            // Se existir uma imagem ele coloca na tela, senão deixa a default
             if let data = band.imageData {
                 self.imageViewImage.image = UIImage(data: data)
             } else {
                 self.imageViewImage.image = UIImage(named: "testeImage")
             }
             
+            // Tira o loading e coloca a tela com o alpha normals
             SVProgressHUD.dismiss()
             self.view.alpha = 1
-            
-            
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-   
 }

@@ -21,10 +21,9 @@ class BandTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
+    // Método que configura a célula através de um objeto band
     func configure(band : Band) {
         self.labelName.text = band.name
     }
