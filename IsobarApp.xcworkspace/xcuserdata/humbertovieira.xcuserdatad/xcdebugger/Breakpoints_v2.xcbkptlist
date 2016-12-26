@@ -94,11 +94,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IsobarAppTests/NetworkTests.swift"
-            timestampString = "504456669.344974"
+            timestampString = "504459741.86221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "finishGetExtraInformation(band:)"
             landmarkType = "7">
             <Locations>
@@ -110,11 +110,11 @@
                   moduleName = "IsobarAppTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/humbertovieira/Documents/Repositories/IsobarApp/IsobarAppTests/NetworkTests.swift"
-                  timestampString = "504456690.193887"
+                  timestampString = "504459745.576388"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "78">
                </Location>
                <Location
@@ -125,11 +125,11 @@
                   moduleName = "IsobarAppTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/humbertovieira/Documents/Repositories/IsobarApp/IsobarAppTests/NetworkTests.swift"
-                  timestampString = "504456690.199277"
+                  timestampString = "504459745.57942"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>

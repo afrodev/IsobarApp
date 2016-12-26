@@ -44,8 +44,9 @@ class NetworkTests: XCTestCase, BandServiceProtocol {
         let band = Band()
         band.id = "1"
         band.name = "Between the Buried and Me"
-        service.getExtraInformation(band: band)
         service.delegate = self
+
+        service.getExtraInformation(band: band)
         
     }
     
